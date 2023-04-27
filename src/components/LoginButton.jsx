@@ -2,7 +2,9 @@ import React from 'react'
 
 const LoginButton = () => {
   return (
-    <div>LoginButton</div>
+    <React.Fragment>
+      <button>Login</button>
+    </React.Fragment>
   )
 }
 

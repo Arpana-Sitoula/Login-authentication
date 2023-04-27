@@ -2,7 +2,13 @@ import React from 'react'
 
 const Password = () => {
   return (
-    <div>Password</div>
+    <React.Fragment>
+      <form>
+        <label>Password</label><br/>
+        <input type='password'></input>
+      </form>
+    </React.Fragment>
+
   )
 }
 

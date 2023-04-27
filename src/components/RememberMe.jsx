@@ -2,7 +2,12 @@ import React from 'react'
 
 const RememberMe = () => {
   return (
-    <div>RememberMe</div>
+    <React.Fragment>
+      <form>
+        <input type='checkbox'></input>
+        <label>Remember me</label>
+      </form>
+    </React.Fragment>
   )
 }
 
