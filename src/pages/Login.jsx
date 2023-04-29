@@ -13,11 +13,11 @@ const Login = () => {
       <div className='login'>
         <div className='heading'>Login</div>
         <div className='formEl'>
-        <Username></Username>
-        <Password></Password>
-        <Captcha></Captcha>
-        <RememberMe></RememberMe>
-        <LoginButton></LoginButton>
+          <Username></Username>
+          <Password></Password>
+          <Captcha></Captcha>
+          <RememberMe></RememberMe>
+          <LoginButton></LoginButton>
         </div>
       </div>
     </React.Fragment>

@@ -4,7 +4,7 @@ const RememberMe = () => {
   return (
     <React.Fragment>
       <form className='check'>
-        <label>Remember me</label>
+        <label>Remember me</label><br/>
         <input type='checkbox'></input>
       </form>
     </React.Fragment>
