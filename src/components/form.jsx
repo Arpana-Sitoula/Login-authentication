@@ -5,7 +5,8 @@ import Input from './resuable/Input';
 const form = () => {
 const [form, setForm] = useState({
     name: "",
-    email: ""
+    email: "",
+    username: ""
 });
 const onChangeHandle = (event) =>{
     // event.preventDefault();
@@ -15,7 +16,7 @@ const onChangeHandle = (event) =>{
         ...form, [name]:value
     })
 }
-const abilityHandle = (event) =>{
+const abilityHandle = () =>{
     if(form.name.length < 7){
         return true;
     }
@@ -27,8 +28,8 @@ const abilityHandle = (event) =>{
             <Input
             labelFor="Username"
             inputType="text"
-            inputName = "name"
-            value = {form.name}
+            inputName = "username"
+            value = {form.inputName}
             onChange = {onChangeHandle}
             />
             <p>{form.name} </p>

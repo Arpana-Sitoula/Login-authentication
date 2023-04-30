@@ -1,14 +1,12 @@
 import './styles/App.css'
-import Login from './components/Login';
-import Form from './components/form';
+import './styles/login.scss'
 import React from 'react'
+import LoggedIn from './components/LoggedIn';
 
 function App() {
-
   return (
     <React.Fragment>
-    <Form/>
-    <Login/>
+    <LoggedIn/>
     </React.Fragment>
   )
 }

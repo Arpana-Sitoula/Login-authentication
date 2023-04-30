@@ -19,13 +19,16 @@ $level-width: 100%;
     button{
         @extend .button-basics
     }
-    button:disabled{
-        background-color:$-sec-color;
-    }
+    
 }
 form{
     @extend .form-basics
 }
 button{
-    @extend .button-basics
+    @extend .button-basics;
+    margin: 10px;
+    width: auto;
+}
+button:disabled{
+    background-color:$-sec-color;
 }
