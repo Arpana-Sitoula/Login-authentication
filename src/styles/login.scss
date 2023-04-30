@@ -3,15 +3,9 @@ $-sec-color: rgb(103, 103, 181);
 $input-width: 300px;
 $input-height: 20px;
 $level-width: 100%;
-.button-basics{
-    background-color: $-primary-color;
-    color: #fff;
-    padding: 12px 24px;
-    border: none; 
-    text-decoration: none;
-    width: $input-width;
-    margin: 10px 0px;
-}
+@import "button.scss";
+@import "form.scss";
+
 .login {
     border: 5px solid $-primary-color;
     margin: auto;
@@ -22,44 +16,16 @@ $level-width: 100%;
         text-align: center;
         padding: 18px 0px 26px 0px;
     }
-    .formEl {
-        width: $level-width;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        .check{
-            width: $input-width;
-            display: flex;
-            justify-content:left;
-        }
-        button{
-            @extend .button-basics
-        }
-
-    }
-}
-form {
-    label {
-        width: $level-width;
-        height: 5px;
-        padding: 8px 0px;
-        color: $-primary-color;
-    }
-    input {
-        width: $input-width;
-        height: $input-height;
-        padding: 12px 20px;
-        margin: 8px 5px;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: content-box;
-    }
     button{
         @extend .button-basics
     }
     button:disabled{
         background-color:$-sec-color;
     }
-    
+}
+form{
+    @extend .form-basics
+}
+button{
+    @extend .button-basics
 }

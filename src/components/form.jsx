@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Input from './resuable/Input';
 
 
 const form = () => {
@@ -11,20 +12,32 @@ const onChangeHandle = (event) =>{
     const {name,value} = event.target;
     console.log(event.target);
     setForm({
-        ...form,
-        [name]:value
+        ...form, [name]:value
     })
+}
+const abilityHandle = (event) =>{
+    if(form.name.length < 7){
+        return true;
+    }
 }
   return (
     <div>
         <form>
+            <p>{form.inputname}</p>
+            <Input
+            labelFor="Username"
+            inputType="text"
+            inputName = "name"
+            value = {form.name}
+            onChange = {onChangeHandle}
+            />
             <p>{form.name} </p>
             <label>Name</label>
             <input type='text' name="name" value={form.name} onChange={onChangeHandle}></input><br/>
             <p>{form.email}</p>
             <label>Email</label>
             <input type='email'name="email" value={form.email} onChange={onChangeHandle}></input><br/>
-            <button disabled type='submit'>Okay</button>
+            <button disabled ={abilityHandle()} type='submit'>Okay</button>
         </form>
     </div>
   )

@@ -1,0 +1,17 @@
+.form-basics {
+    label {
+        width: $level-width;
+        height: 5px;
+        padding: 8px 0px;
+        color: $-primary-color;
+    }
+    input {
+        width: $input-width;
+        height: $input-height;
+        padding: 12px 20px;
+        margin: 8px 5px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: content-box;
+    }
+}

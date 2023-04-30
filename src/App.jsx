@@ -1,5 +1,5 @@
 import './styles/App.css'
-import Login from './pages/Login'
+import Login from './components/Login';
 import Form from './components/form';
 import React from 'react'
 
