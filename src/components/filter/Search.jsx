@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Search = ({availableOnly, filterText, onFilterTextChange, onAvailableChange}) => {
+  console.log("Search", availableOnly);
   return (
    <form>
     <input 
@@ -13,7 +14,7 @@ const Search = ({availableOnly, filterText, onFilterTextChange, onAvailableChang
         type='checkbox'
         checked={availableOnly}
         onChange={(e) => onAvailableChange(e.target.checked)}
-        onClick={console.log("Checked")}/>
+        />
         {' '}
         Only show available users
     </label>
