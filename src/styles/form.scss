@@ -14,4 +14,11 @@
         border: 1px solid #ccc;
         box-sizing: content-box;
     }
+    input[type="checkbox"] {
+        width: 20px;
+
+        &:checked {
+            background: #222;
+        }
+    }    
 }

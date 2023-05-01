@@ -31,7 +31,7 @@ const Login = () => {
           />
         </form>
         <Button
-          buttonTitle="submit"
+          title="submit"
           type="submit" />
       </div>
     </React.Fragment>

@@ -24,7 +24,7 @@ const abilityHandle = () =>{
   return (
     <div>
         <form>
-            <p>{form.inputname}</p>
+            <p>{form.username}</p>
             <Input
             labelFor="Username"
             inputType="text"

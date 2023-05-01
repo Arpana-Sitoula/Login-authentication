@@ -16,8 +16,11 @@ $level-width: 100%;
         text-align: center;
         padding: 18px 0px 26px 0px;
     }
+    form{
+        @extend .form-basics
+    }
     button{
-        @extend .button-basics
+        @extend .button-basics;
     }
     
 }
