@@ -6,3 +6,6 @@
 *{
     font-family: Montserrat;
 }
+.app{
+    display: flex;
+}

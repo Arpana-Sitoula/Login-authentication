@@ -22,7 +22,8 @@ const abilityHandle = () =>{
     }
 }
   return (
-    <div>
+    <div className='login'>
+        <div className='heading'>Signup</div>
         <form>
             <p>{form.username}</p>
             <Input

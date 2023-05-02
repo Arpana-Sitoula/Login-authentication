@@ -8,7 +8,7 @@ const Search = ({availableOnly, filterText, onFilterTextChange, onAvailableChang
     type='text' 
     placeholder='Search...'
     value={filterText}
-    onChange={(e) => onFilterTextChange(e.target.value)}/>
+    onChange={(e) => onFilterTextChange(e.target.value)}/><br/>
     <label>
         <input 
         type='checkbox'

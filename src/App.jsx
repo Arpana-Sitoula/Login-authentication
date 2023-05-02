@@ -7,8 +7,10 @@ import Single from './components/filter/Single';
 function App() {
   return (
     <React.Fragment>
+    <div className='app'>
     <Single/>
     <LoggedIn/>
+    </div>
     </React.Fragment>
   )
 }
