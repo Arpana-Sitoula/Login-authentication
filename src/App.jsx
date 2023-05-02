@@ -8,7 +8,7 @@ import Todo from './components/todo/Todo';
 function App() {
   return (
     <React.Fragment>
-    <div className='app'>
+    <div className='container'>
     <Single/>
     <LoggedIn/>
     </div>

@@ -17,8 +17,12 @@ const ResourceList = ({ resourceType }) => {
   }, [resourceType])
   return (
     <div>
-      <h1>{resourceType} </h1>
-      <h2>{resourceList.length}</h2>
+      <h1>{resourceType}</h1>
+      <div>
+        {resourceList.map((data) => (
+          <li key={data.id}>{data.title}</li>
+        ) )}
+      </div>
     </div>
   )
 }
