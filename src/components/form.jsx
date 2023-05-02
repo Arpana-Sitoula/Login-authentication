@@ -17,7 +17,7 @@ const onChangeHandle = (event) =>{
     })
 }
 const abilityHandle = () =>{
-    if(form.name.length < 7){
+    if(form.name.length < 5){
         return true;
     }
 }

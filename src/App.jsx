@@ -3,6 +3,7 @@ import './styles/login.scss'
 import React from 'react'
 import LoggedIn from './components/LoggedIn';
 import Single from './components/filter/Single';
+import Todo from './components/todo/Todo';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Single/>
     <LoggedIn/>
     </div>
+    <Todo/>
     </React.Fragment>
   )
 }
