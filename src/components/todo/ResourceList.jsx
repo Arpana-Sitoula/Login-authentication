@@ -19,7 +19,7 @@ const ResourceList = ({ resourceType }) => {
     <div>
       <h1>{resourceType}</h1>
       <div>
-        {resourceList.map((data) => (
+        {resourceList.map(data => (
           <li key={data.id}>{data.title}</li>
         ) )}
       </div>
